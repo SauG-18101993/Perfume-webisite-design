@@ -1,0 +1,402 @@
+/* Font syles */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font styles */
+/* Common classes starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.section_padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container{
+    max-width: 1140px;
+    margin:0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+/* Common classes Ends*/
+/* Header section starts */
+.nav_1{
+    width: 100%;
+    background-color:#FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-top: -7px;
+}
+.btn_1{
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+}
+/* Navabar Ends */
+/* Banner section starts */
+.hero-banner {
+  height: 100vh;
+  background: url("../Images/banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  position: relative;
+}
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+.banner-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.banner-content p {
+  font-size: 24px;
+  margin-top: 12px;
+}
+/* Banner section ends */
+/* Collections section starts */
+.collections-section {
+  background: #f9f7ec;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #333;
+}
+.collections-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+.collections-slider::-webkit-scrollbar {
+  display: none;
+}
+.collections-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.collection-card {
+  min-width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.collection-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+  border-radius: 8px;
+}
+
+.collection-card span {
+  position: relative;
+  z-index: 2;
+}
+.image-wood    { 
+    background-image: url("../Images/image\ wood.jpg"); 
+}
+.image-mint    { 
+    background-image: url("../Images/mint\ image.jpg"); 
+}
+.image-gold    { 
+    background-image: url("../Images/image\ gold.jpg"); 
+}
+.image-sea     { 
+    background-image: url("../Images/sea\ deep.jpg"); 
+}
+.image-orange  { 
+    background-image: url("../Images/orange\ old.jpg"); 
+}
+.image-flower  { 
+    background-image: url("../Images/image\ floral.jpg"); 
+}
+/* Collections section ends */
+/* collection wood section starts */
+/* Wood Collection Section */
+.wood-collection-section {
+  background: #faf8ea;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+  text-align: left;
+}
+/* Product Cards */
+.product-card {
+  text-align: left;
+}
+.product-image {
+  width: 100%;
+  border-radius: 4px;
+}
+.product-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 12px;
+  color: #333;
+}
+.product-desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+.product-price {
+  font-weight: 700;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #111;
+}
+/* Hover Zoom */
+.product-image {
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+/* Collection wood section ends */
+/* Immense Fragnance section starts */
+.fragrance-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: #fcfcee;
+}
+.fragrance-content {
+  flex: 1;
+  max-width: 600px;
+}
+.fragrance-content h4 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.fragrance-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+.fragrance-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+.fragrance-image {
+  flex: 1;
+  text-align: right;
+}
+.fragrance-image img {
+  width: 100%;
+  max-width: 550px;
+  object-fit: cover;
+}
+/* Immense Fragnance section Ends */
+/* Footer section starts */
+.footer {
+  background: #3c3c3c;
+  color: #e6e6e6;
+  padding: 80px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 230px;
+}
+
+.footer-logo {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #d1d1d1;
+}
+
+.footer-form {
+  display: flex;
+  gap: .5rem;
+}
+
+.footer-form input {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+}
+
+.footer-form button {
+  padding: 20px 30px;
+  border: none;
+  background: #cfcfcf;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-box h3 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 20px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin: 20px 0;
+}
+
+.footer-box a {
+  text-decoration: none;
+  color: #e6e6e6;
+  transition: .3s;
+}
+
+.footer-box a:hover {
+  color: #ffffff;
+}
+.img-f{
+    width:84px;
+    height:75px;
+}
+/* Footer section ends */
+/* Responsive styles */
+@media (max-width: 480px) {
+
+  /* Navbar */
+  .nav_1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .btn_1 {
+    width: 100%;
+  }
+
+  /* Banner Section */
+  .hero-banner {
+    height: 70vh;
+    background-position: center;
+  }
+  .banner-content h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-content .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* Collections Section */
+  .section-title {
+    font-size: 28px;
+  }
+  .collection-card {
+    min-width: 180px;
+    height: 220px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Wood Collection Products */
+  .section-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section-subtitle {
+    text-align: center;
+  }
+  .product-card {
+    text-align: center;
+  }
+
+  /* Fragrance Banner */
+  .fragrance-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .fragrance-content h1 {
+    font-size: 26px;
+  }
+  .fragrance-content p {
+    font-size: 16px;
+  }
+  .fragrance-image img {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-form {
+    flex-direction: column;
+  }
+  .footer-form input,
+  .footer-form button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+/* Responsive styles ends */
